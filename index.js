@@ -18,8 +18,8 @@ function deleteFromObjectByKey(object, key) {
   return clonedObject;
 }
 
-// returns object without the delete key/value pair
-// modifies the original object
+// 1) returns object without the delete key/value pair
+// 2) modifies the original object
 function destructivelyDeleteFromObjectByKey(object, key) {
   delete object[key];
   return object;
