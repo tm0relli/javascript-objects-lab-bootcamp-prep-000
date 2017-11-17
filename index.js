@@ -13,7 +13,7 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
 
 // deletes `key` from a clone of object and returns the new object (it is non-destructive)
 function deleteFromObjectByKey(object, key) {
-  var clonedObject = Object.Assign({}, object);
+  var clonedObject = Object.assign({}, object);
   delete clonedObject[key];
   return clonedObject;
 }
